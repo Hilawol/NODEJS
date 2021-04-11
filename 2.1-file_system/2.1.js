@@ -13,5 +13,5 @@ fs.renameSync('notes.txt', 'notes-original.txt')
 fs.readdirSync('./').map(f => console.log(f));
 
 //5. Find out and implement another method for the fs module.
-//Reads the content of the file 'notes-original.txt'
+//Reads the content of the file 'notes-original.txt '
 console.log(fs.readFileSync('notes-original.txt', 'utf8'));
