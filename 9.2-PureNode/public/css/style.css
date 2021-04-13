@@ -1,0 +1,12 @@
+h1{
+  width:400px;
+  display: block;
+  margin:100px auto;
+  color:red;
+}
+
+img{
+  display: block;
+  width:60vw;
+  margin:auto;
+}
