@@ -1,0 +1,27 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline:none;
+}
+/*    Search Component     */
+.searchComponent{
+  margin:10px;
+}
+.searchInput{
+  height: 30px;
+  width:200px;
+}
+
+.fa-search,.searchBtn{
+  display: inline-block;
+  height: 30px;
+  width:60px;
+  text-align: center;
+}
+
+.searchBtn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}

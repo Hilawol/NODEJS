@@ -1,0 +1,29 @@
+.user{
+  border:1px solid black;
+  width:900px;
+  margin:10px;
+  padding:10px;
+}
+
+.user:hover{
+  background-color: aquamarine;
+}
+
+.userId,.userCredit,.userCash{
+  display: inline-block;
+  width:150px;
+  margin-right: 10px;
+}
+.userId{
+  width:200px;
+}
+
+.btn,.actions{
+  display: inline-block;
+}
+
+.btn{
+  margin: 10px 5px;
+}
+
+
