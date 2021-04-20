@@ -20,6 +20,6 @@ mongoose.connect('mongodb://localhost/myStore', {
   console.log("database connect")
 });
 
-app.listen(process.env.PORT || 5001, () => {
-  console.log(`application start at ${process.env.PORT || 5001}`)
+app.listen(process.env.PORT || 5000, () => {
+  console.log(`application start at ${process.env.PORT || 5000}`)
 })

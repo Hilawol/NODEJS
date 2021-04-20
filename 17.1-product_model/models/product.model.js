@@ -58,7 +58,7 @@ const productSchema = mongoose.Schema({
       required: true,
       trim: true,
       validate(value) {
-        if (value.length != 10 || !value.startsWith("0")) {
+        if (value.length != 9 || !value.startsWith("0")) {
           throw new Error('Phone number must be 10 digits and start with 0');
         }
       }
