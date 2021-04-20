@@ -1,0 +1,46 @@
+[
+  {
+    "name": "Satin top woth print",
+    "category": "tops",
+    "details": {
+      "description": "dksjhflkjdfhlksjhdflkjd",
+      "price": "139.9",
+      "images": [
+        "https://static.zara.net/photos///2021/V/0/1/p/4661/014/712/3/w/1280/4661014712_2_12_1.jpg?ts=1618849780428",
+        "https://static.zara.net/photos///2021/V/0/1/p/4661/014/712/2/w/1280/4661014712_6_1_1.jpg?ts=1618558435505"
+      ],
+      "phone": "098355439"
+    }
+  },
+  {
+    "name": "LINEN BLEND TOP",
+    "category": "top",
+    "details": {
+      "descripction": "TOP MADE OF A LINEN BLEND. V-NECK AND SHORT SLEEVES. ELASTIC HEM AT THE BACK.",
+      "price": 139.9,
+      "images": [
+        "https://static.zara.net/photos///2021/V/0/1/p/7385/017/649/2/w/1280/7385017649_1_1_1.jpg?ts=1618564214371",
+        "https://static.zara.net/photos///2021/V/0/1/p/7385/017/649/2/w/1280/7385017649_2_1_1.jpg?ts=1618564223357"
+      ],
+      "phone": "0522222222"
+    }
+  },
+  {
+    "name": "category": "details": {
+      "descripction": "price": "discount": "images": [
+        "",
+        ""
+      ],
+      "phone":
+    }
+  },
+  {
+    "name": "category": "details": {
+      "descripction": "price": "discount": "images": [
+        "",
+        ""
+      ],
+      "phone":
+    }
+  }
+]
