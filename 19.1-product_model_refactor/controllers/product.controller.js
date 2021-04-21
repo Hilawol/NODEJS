@@ -68,10 +68,58 @@ const getByPriceRange = async (req, res) => {
   }
 }
 
+const updateProduct = async (req, res) => {
+
+  const updates = Object.keys(req.body);//Creates array of all keys sent to update
+  const allowedUpdtaes = ["name", "category", "isActive", "price", "description", "discount", "phone"];
+  const isValidOperation = updates.every(update => allowedUpdtaes.includes(update));
+
+  if (!isValidOperation) {
+    return res.status(400).send({ error: 'Invalid updates!' });
+  }
+  const { name } = req.params;
+  try {
+    const user = await productModel.findOneAndUpdate({ name: name }, req.body, { new: true })
+    if (!user) {
+      return res.status(404).send()
+    }
+    return res.send(user)
+
+  } catch (error) {
+    return res.status(400).send(error)
+  }
+}
+
+const deleteAllProducts = async (req, res) => {
+  try {
+    await productModel.deleteMany({});
+    return res.send();
+  } catch (error) {
+    return res.status(400).send(error)
+  }
+}
+
+const deleteProduct = async (req, res) => {
+  const { name } = req.params;
+  try {
+    const user = await productModel.findOneAndDelete({ name: name });
+    if (!user) {
+      return res.status(404).send()
+    }
+    return res.send(user)
+
+  } catch (error) {
+    return res.status(400).send(error)
+  }
+}
+
 module.exports = {
   createProduct,
   getProducts,
   getProductbyName,
   getActiveProducts,
-  getByPriceRange
+  getByPriceRange,
+  updateProduct,
+  deleteAllProducts,
+  deleteProduct
 }

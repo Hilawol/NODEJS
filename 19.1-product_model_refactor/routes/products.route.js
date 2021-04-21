@@ -16,8 +16,17 @@ router
   .get('/:name', (req, res) => {
     productControler.getProductbyName(req, res);
   })
+  .patch('/:name', (req, res) => {
+    productControler.updateProduct(req, res);
+  })
   .post('/', (req, res) => {
     productControler.createProduct(req, res);
+  })
+  .delete('/', (req, res) => {
+    productControler.deleteAllProducts(req, res);
+  })
+  .delete('/:name', (req, res) => {
+    productControler.deleteProduct(req, res);
   })
 
 
